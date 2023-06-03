@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Язык Java</title>
+  </head>
+  <body>
+    <header>
+      <div class="innerHeader">
+        <h1>Язык программирования Java</h1>
+        <img
+          src="assets\java-logo-vector-1.svg"
+          width="120"
+          height="80"
+          alt="Логотип 'Java'"
+        />
+      </div>
+    </header>
+    <div class="container">
+      <h2>Краткая теория: особенности и сферы применения Java</h2>
+      <p>
+        Java разработала компания Sun Microsystems в начале 90-х годов XX века.
+        Ведущую роль в создании языка сыграл канадский инженер Джеймс Гослинг, а
+        на ранних этапах разработки язык назывался Oak. Затем его переименовали
+        в честь сорта кофе Java и в честь этого оставили чашку в логотипе.
+      </p>
+      <p>
+        Джеймс Гослинг и его единомышленники хотели создать язык с C-подобным
+        синтаксисом. В то же время он должен быть более простым по сравнению с
+        C/C++. Создатели планировали использовать Java для программирования
+        бытовой электроники, однако практически сразу после выпуска версии 1.0 в
+        1995 году язык стали использовать разработчики серверного и клиентского
+        ПО.
+      </p>
+      <p>
+        В 2010 году компанию Sun Microsystems купила Oracle. После этого Джеймс
+        Гослинг перешёл в Google, откуда тоже вскоре уволился.
+      </p>
+      <h2>Особенности языка Java</h2>
+      <p>
+        Java — язык программирования общего назначения. Относится к
+        объектно-ориентированным языкам программирования, к языкам с сильной
+        типизацией.
+      </p>
+      <p>
+        Создатели реализовали принцип WORA: write once, run anywhere или «пиши
+        один раз, запускай везде». Это значит, что написанное на Java приложение
+        можно запустить на любой платформе, если на ней установлена среда
+        исполнения Java (JRE, Java Runtime Environment).
+      </p>
+      <p>
+        Эта задача решается благодаря компиляции написанного на Java кода в
+        байт-код. Этот формат исполняет JVM или виртуальная машина Java. JVM —
+        часть среды исполнения Java (JRE). Виртуальная машина не зависит от
+        платформы.
+      </p>
+      <p>
+        В Java реализован механизм управления памятью, который называется
+        сборщиком мусора или garbage collector. Разработчик создаёт объекты, а
+        JRE с помощью сборщика мусора очищает память, когда объекты перестают
+        использоваться. Объясняет эксперт Никита Липский: «Есть такое понятие —
+        циклический мусор. Внутри цикла на все объекты есть ссылки, однако
+        garbage collector в Java удалит его, если объекты не могут
+        использоваться из программы».
+      </p>
+      <p>
+        Как отмечалось выше, синтаксис языка Java похож на синтаксис других
+        си-подобных языков. Вот его некоторые особенности:
+      </p>
+      <ul style="list-style-type: circle">
+        <li>
+          чувствительность к регистру — идентификаторы
+          <span id="bodySpan">User</span> и <span id="bodySpan">user</span> в
+          Java представляют собой разные сущности;
+        </li>
+        <li>
+          для именования методов используется lowerCamelCase. Если название
+          метода состоит из одного слова, оно должно начинаться со строчной
+          буквы. Пример: <span id="bodySpan">firstMethodName()</span>;
+        </li>
+        <li>
+          для именования классов используется UpperCamelCase. Если название
+          состоит из одного слова, оно должно начинаться с прописной буквы.
+          Пример: <span id="bodySpan">FirstClassName</span>.
+        </li>
+        <li>
+          название файлов программы должно точно совпадать с названием класса с
+          учётом чувствительности к регистру. Например, если класс называется
+          <span id="bodySpan">FirstClassName</span>
+          , файл должен называться
+          <span id="bodySpan">FirstClassName.java</span> ;
+        </li>
+        <li>
+          идентификаторы всегда начинаются с буквы (
+          <span id="bodySpan">A-Z</span>, <span id="bodySpan">a-z</span>), знака
+          <span id="bodySpan">$</span> или нижнего подчёркивания
+          <span id="bodySpan">_</span>;
+        </li>
+      </ul>
+      <h2>Что пишут на языке Java: сферы применения</h2>
+      <p>
+        По данным компании Oracle, программы на Java запускаются на 3 млрд
+        девайсов. Например, подавляющее большинство крупных компаний так или
+        иначе используют Java, и очень много серверных приложений для корпораций
+        написаны на этом языке. Например, речь идёт о программах для финансовых
+        организаций, которые обеспечивают проведение транзакций, фиксацию
+        торговых операций.
+      </p>
+      <p>
+        На Java также написано много веб-приложений. Популярные фреймворки, в
+        том числе Spring, Stuts, JSP, используются для создания разных
+        приложений в вебе: от ecommerce-проектов до крупных порталов, от
+        образовательных платформ до правительственных ресурсов.
+      </p>
+      <p>Популярная компьютерная игра Minecraft написана на Java.</p>
+      <p>
+        Мобильная разработка — ещё одна область использования Java. На этом
+        языке пишут приложения для устройств, работающих под управлением ОС
+        Android. На Java также создают клиентские приложения.
+      </p>
+      <p>
+        Кроме того, Java применяется для работы с Big Data, разработки программ
+        для научных целей, например, обработки естественных языков,
+        программирования приборов — от бытовых девайсов до промышленных
+        установок.
+      </p>
+      <p>
+        То есть на Java можно писать разные типы приложений: веб, мобильный и
+        десктопный софт, игры и так далее. Традиционно у этого языка сильные
+        позиции в промышленном программировании, в сегменте крупных компаний.
+      </p>
+      <h2>Популярность Java</h2>
+      <p>
+        Вы уже знаете, что по результатам рейтинга State of Octoverse 2021 Java
+        входит в тройку самых популярых языков программирования. Java опережает
+        по популярности PHP, C#, C++, TypeScript и другие востребованные языки,
+        а уступает только JavaScript и Python.
+      </p>
+      <p>
+        Справка: рейтинг State of Octoverse рассчитывается по количеству
+        репозиториев на соответствующем языке, которые хранятся на GitHub.
+      </p>
+      <p>
+        В индексе TIOBE на июнь 2022 года Java занимает третьем место. Индекс
+        TIOBE — индикатор популярности языков программирования, который
+        рассчитывается по сложной методике с учётом количества поисковых
+        запросов, относящихся к тому или иному языку. При этом первое место в
+        этом индексе занимает язык программирования Python, а на втором месте —
+        C.
+      </p>
+      <h2>Зарплата Java-программистов</h2>
+      <p>
+        По данным Хабр Карьера на второе полугодие 2021 года, медианная зарплата
+        программиста на Java составляет 165 тыс. рублей в месяц — это на 25 тыс.
+        рублей больше, чем в 2020 году. Джависты зарабатывают больше
+        программистов на Python, JavaScript и PHP.
+      </p>
+      <p>
+        В Исследовании Хабр-карьеры говорится, что на конец 2021 года медианная
+        зарплата стажеров на Java составляла 40 тыс. рублей — это больше на 11%,
+        чем в конце 2020 года. Джунов — 65 тыс. рублей, без изменений год к
+        году. Мидлов — 150 тыс. рублей — это на 14% больше, а сеньоров — 230
+        тыс. рублей, +10%. Больше всех, конечно же, получают лиды — от 269 тыс.
+        рублей в месяц. Это на 8% больше, чем в конце 2020 года.
+      </p>
+    </div>
+    <div class="container">
+      <div class="column">
+        <div style="padding-top: 10px; padding-bottom: 10px">
+          <b>Некоторые полезные ссылки</b>
+        </div>
+        <div class="links">
+          <a href="https://www.java.com/ru" target="_blank">
+            <strong>Официальный сайт Java</strong>
+          </a>
+        </div>
+        <div class="links">
+          <a href="https://www.oracle.com/cis/java/" target="_blank">
+            <strong>Сайт Oracle</strong>
+          </a>
+        </div>
+        <div class="links">
+          <a href="https://ru.wikipedia.org/wiki/Java" target="_blank">
+            <strong>Статья на Wikipedia</strong>
+          </a>
+        </div>
+      </div>
+      <div class="column">
+        <fieldset>
+          <legend>
+            <b>Лучший язык программирования и почему это Java? :)</b>
+          </legend>
+          <form action="http://example.com/submit" method="post">
+            <p><input type="checkbox" id="java" name="java" checked /> Java</p>
+            <p><input type="checkbox" id="java" name="java" checked /> Java</p>
+            <p><input type="checkbox" id="java" name="java" /> Java</p>
+            <p><input type="checkbox" id="java" name="java" />Java</p>
+            <p>
+              <input type="submit" value="Выбрать" />
+            </p>
+          </form>
+        </fieldset>
+      </div>
+      <div class="column">
+        <fieldset>
+          <legend><b>А теперь серьезно</b></legend>
+          <form action="http://example.com/submit" method="post">
+            <p>
+              <input type="radio" id="java" name="bestLanguage" checked /> Java
+            </p>
+            <p><input type="radio" id="с#" name="bestLanguage" checked /> С#</p>
+            <p><input type="radio" id="c++" name="bestLanguage" /> С++</p>
+            <p><input type="radio" id="python" name="bestLanguage" />Python</p>
+            <p>
+              <input type="submit" value="Выбрать" />
+            </p>
+          </form>
+        </fieldset>
+      </div>
+      <div class="column">
+        <fieldset>
+          <legend>
+            <b>Введитте свой e-mail и телефон. Зачем? Без понятия</b>
+          </legend>
+          <form action="http://example.com/submit" method="post">
+            <p>
+              <label for="email">Email: </label>
+              <input
+                type="email"
+                placeholder="user@gmail.com"
+                id="email"
+                name="email"
+              />
+            </p>
+            <p>
+              <label for="phone">Телефон: </label>
+              <input
+                type="tel"
+                placeholder="(XXX)-XXX-XXXX"
+                id="phone"
+                name="phone"
+              />
+            </p>
+            <p>
+              <input type="submit" value="Ввести" />
+            </p>
+          </form>
+        </fieldset>
+      </div>
+    </div>
+    <div class="container">
+      <div class="flexColumn">
+        <div>
+          <div class="catsText"><b>Здесь будут появляться коты :)</b></div>
+          <div class="response"></div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="copyright">
+          © 2023 Все права защищены. Разработано
+          <span id="bodySpan">Павлом Багаевым</span>
+        </div>
+      </div>
+    </footer>
+    <script>
+      var response = document.querySelector(".response");
+      var request = new XMLHttpRequest();
+
+      function catsHandler() {
+        var status = request.status;
+        if (status == 200) {
+          var cats = JSON.parse(request.responseText);
+          console.log(typeof cats);
+          console.log(cats[0].url);
+          response.innerHTML =
+            '<img src="' +
+            cats[0].url +
+            '" alt="Funny cats from the Interner :)"/>';
+          console.log(response.innerHTML);
+        }
+      }
+
+      function getCats() {
+        request.onload = catsHandler;
+        request.open(
+          "GET",
+          "https://api.thecatapi.com/v1/images/search?mime_types=gif"
+        );
+        request.send();
+      }
+
+      setInterval(getCats, 5000);
+    </script>
+  </body>
+</html>
