@@ -274,6 +274,7 @@
       function catsHandler() {
         var status = request.status;
         if (status == 200) {
+          //Десериализуем результат запроса из строки в объект 
           var cats = JSON.parse(request.responseText);
           console.log(typeof cats);
           console.log(cats[0].url);
@@ -285,8 +286,11 @@
         }
       }
 
+      //Запрашиваем gif с котом
       function getCats() {
+        // Устанавливаем обработчик события изменения состояния
         request.onload = catsHandler;
+        //Открываем запрос
         request.open(
           "GET",
           "https://api.thecatapi.com/v1/images/search?mime_types=gif"
