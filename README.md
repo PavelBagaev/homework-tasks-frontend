@@ -1,1 +1,1 @@
-# homework-tasks-frontend
+Здесь находится третье задание по Frontend-блоку.
